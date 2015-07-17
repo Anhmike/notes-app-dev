@@ -3,12 +3,23 @@
     <title>Angular 2 Quickstart</title>
     <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
     <script src="https://jspm.io/system@0.16.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.30/angular2.dev.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand">My Notebook</a>
+        </div>
+      </div>
+    </nav>
+
     <!-- The app component created in app.ts -->
-    <hello-world></hello-world>
+    <app></app>
 
     <script>System.import('app');</script>
   </body>

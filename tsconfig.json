@@ -12,6 +12,8 @@
     ],
     "files": [
         "./app/app.ts",
+        "./app/components/notes-list/notes-list.ts",
+        "./app/services/notes.ts",
         "./typings/angular2/angular2.d.ts",
         "./typings/es6-promise/es6-promise.d.ts",
         "./typings/rx/rx-lite.d.ts",
