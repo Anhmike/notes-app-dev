@@ -2,6 +2,7 @@
 
 import {Component, View, bootstrap} from 'angular2/angular2';
 import {NotesList} from './components/notes-list/notes-list';
+import {NotesService} from './services/notes';
 
 @Component({
   selector: 'app'
@@ -49,7 +50,7 @@ import {NotesList} from './components/notes-list/notes-list';
   `
 })
 class HelloWorldComponent {
-  
+
 }
 
-bootstrap(HelloWorldComponent);
+bootstrap(HelloWorldComponent, [NotesService]);

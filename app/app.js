@@ -12,6 +12,7 @@ if (typeof __metadata !== "function") __metadata = function (k, v) {
 };
 var angular2_1 = require('angular2/angular2');
 var notes_list_1 = require('./components/notes-list/notes-list');
+var notes_1 = require('./services/notes');
 var HelloWorldComponent = (function () {
     function HelloWorldComponent() {
     }
@@ -27,4 +28,4 @@ var HelloWorldComponent = (function () {
     ], HelloWorldComponent);
     return HelloWorldComponent;
 })();
-angular2_1.bootstrap(HelloWorldComponent);
+angular2_1.bootstrap(HelloWorldComponent, [notes_1.NotesService]);
